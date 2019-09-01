@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SIGN UP HERE!</title>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style type="text/css">
+
+  #h3 {
+    color: white;
+  }
+  </style>
+  <script type="text/javascript">
+    function register() {
+      alert('Welcome Aboard!! you Have been registered!!.');
+    }
+  </script>
+</head>
+<body style="background-color: #A52929;">
+
+	<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#" style="font-family: cursive; font-weight: bold; font-size: 30px">BestBuy </a>
+      </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#">Home</a></li>
+      <li><a href="#">Help</a></li>
+      <li><a href="#">Privacy</a></li>
+      <li><a href="#">Terms</a></li> &nbsp &nbsp
+      <li class="btn btn-danger navbar-btn"><span class="glyphicon glyphicon-log-in"></span> &nbspLogin</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+      <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+    </ul>
+  </div>
+</nav>
+<div class="container-fluid">
+<div class="row">
+<div class="col-md-3"></div>
+<div class="col-md-6">
+	<br><br><br>
+<div class="jumbotron">
+  <h2 align="center">SIGN UP HERE!!</h2>
+  <br><br>
+  <form class="form-horizontal" method="POST" action="includes/signup.inc.php">
+
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="first">First Name:</label>
+      <div class="col-sm-6">
+        <input type="text" class="form-control" id="first" placeholder="Enter First Name" name="first">
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="last">Last Name:</label>
+      <div class="col-sm-6">
+        <input type="text" class="form-control" id="last" placeholder="Enter Last Name" name="last">
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="email">Email:</label>
+      <div class="col-sm-6">
+        <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="uid">Username:</label>
+      <div class="col-sm-6">
+        <input type="text" class="form-control" id="uid" placeholder="Enter Username" name="uid">
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="pwd">Password:</label>
+      <div class="col-sm-6">
+        <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd">
+    </div>
+    </div>
+    <div class="form-group">
+      <div class="col-sm-offset-2 col-sm-6">
+        <button type="submit" class="btn btn-info" onclick="register();">Submit</button>
+        	<span align="right"> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a href="https://facebook.com" target="_blank" class="btn btn-primary btn-sm" id="subscribe" data-toggle="tooltip" data-placement="bottom" title="facebook"> f </a>&nbsp&nbsp
+        <a href="https://twitter.com" target="_blank" class="btn btn-info btn-sm" id="subscribe" data-toggle="tooltip" data-placement="bottom" title="twitter"> t </a>&nbsp&nbsp
+        <a href="https://youtube.com" target="_blank" class="btn btn-danger btn-sm" id="subscribe" data-toggle="tooltip" data-placement="bottom" title="youtube">  g+</a>
+    </span>
+      </div>
+    </div>
+  </form>
+</div>
+</div>
+<div class="col-md-3">
+
+</div>
+</div> <!--div of the row-->
+</div>
+
+</div>
+<div style="background-color:#232F3E; ">
+<div class="container-fluid">
+  <div style="background-color: #232F3E;">
+    <div class="row">
+          <div class="col-md-3">
+              <h3 id="h3">POLICY INFO</h3>
+              <ul type="none">
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of sale</a></li>
+                <li><a href="#">Terms if Use</a></li>
+                <li><a href="#">Report Abuse & Takedown Policy</a></li>
+              </ul>
+          </div>
+          <div class="col-md-3">
+              <h3 id="h3">COMPANY</h3>
+              <ul type="none">
+              <li><a href="#"> About Us</a></li>
+              <li><a href="#">Core Values</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Engineering</a></li>
+              <li><a href="#">Sitemap</a></li>
+          </div>
+          <div class="col-md-3">
+              <h3 id="h3">NEED HELP ?</h3>
+              <ul type="none">
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">100% Purchase Protection</a></li>
+              </ul>
+          </div>
+          <div class="col-md-3">
+              <h3 id="h3">SUBSCRIBE</h3>
+              <div class="form-inline"><br>
+          <input type="text" class="form-control" id="foot"
+          placeholder="Email here!!" size="15" /><a href="#Contact" class="btn btn-primary btn-responsive" data-toggle="tooltip" data-placement="bottom" title="Enter Email then Click to subscribe" >SUBSCRIBE</a>
+          <br><br>
+          <p id="h3">
+            Register now to get updates on promotions and coupons.<br> Or <a href="#">Download App </a>
+          </p>
+          </div>
+
+          </div>
+    </div>
+  </div>
+  </div>
+
+<hr>
+<div class="jumbotron" align="center">
+            <div class="row">
+                <div class="col-md-4"><h3>
+                    <span class="glyphicon glyphicon-map-marker"> TRACK YOUR ORDER</span> </h3>
+                </div>
+                <div class="col-md-4"><h3>
+                    <span class="glyphicon glyphicon-refresh"> FREE & EASY RETURNS </span> </h3>
+                </div>
+                <div class="col-md-4"><h3>
+                    <span class="glyphicon glyphicon-remove-sign"> ONLINE CANCELLATIONS </span></h3>
+                </div>
+            </div>
+            <br>
+            <hr>
+<div class="row">
+<div class="col-md-8">
+ <div class="container" style="position: relative;">
+ <footer class="container-fluid text-center" id="foot" > 
+  &copy This Webpage (frontend) is created by Ranjeet Kumar for WEBD LAB <br>
+  <br>
+  Copyright © 2017, ranjeet@098 All Rights Reserved
+  </div>
+</footer>
+</div>
+<br>
+<div class="col-md-2" >
+        <a href="https://facebook.com" target="_blank" class="btn btn-primary btn-sm" id="subscribe" data-toggle="tooltip" data-placement="bottom" title="facebook"> f </a>&nbsp
+        <a href="https://twitter.com" target="_blank" class="btn btn-info btn-sm" id="subscribe" data-toggle="tooltip" data-placement="bottom" title="twitter"> t </a>&nbsp
+        <a href="https://youtube.com" target="_blank" class="btn btn-danger btn-sm" id="subscribe" data-toggle="tooltip" data-placement="bottom" title="youtube">  Y</a>&nbsp
+        <a href="https://linkedin.com" target="_blank" class="btn btn-primary btn-sm" id="subscribe" data-toggle="tooltip" data-placement="bottom" title="linkedin"> in</a>
+  </div>
+  <div class="col-md-2">
+    <!--empty div -->
+  </div>
+</div>
+</div>
+
+</body>
+</html>

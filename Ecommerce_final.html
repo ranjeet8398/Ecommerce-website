@@ -1,0 +1,487 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>E-Commerce</title>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style type="text/css">
+    #topBtn {
+  position:relative;
+  z-index:12;
+  left:0;
+  width:100%;
+  text-align:center;
+    }
+
+  #h3 {
+    color: white;
+  }
+  #dropHover:hover {
+    background-color: red;
+}
+
+--------------------------------------------
+
+
+#image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #008CBA;
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  transition: .5s ease;
+}
+
+#container1:hover .overlay {
+	width: 100%;
+	height: 260px;
+	opacity: 0.6;
+}
+
+.text {
+  white-space: nowrap;
+  color: black;
+  font-size: 50px;
+  font-weight: bold;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+-----------------------------------------------
+
+  </style>
+  <script type="text/javascript">
+  	function search() {
+  		alert('Welcome Aboard!! Unfortunately we cannot proceed your request');
+  	}
+
+  	function subscribe() {
+  		alert('You have been Subscribed!! Check your Inbox for Confirmation Email.');
+  	}
+  </script>
+</head>
+<body style="background-color: #FFF0A5;">
+<nav class="navbar navbar-inverse navbar-fixed-top">
+<div class="container">
+    <ul class="nav navbar-nav navbar-right">
+      <li><a id="dropHover" href="F:\shopping_site\E_Commerce_website_by_Ranjeet Kumar\E_Commerce\webd2\ranjit web\sellwithus.html">Sell with us</a></li>
+      <li><a id="dropHover" href="F:\shopping_site\E_Commerce_website_by_Ranjeet Kumar\E_Commerce\webd2\ranjit web\advertise.html">Advertise</a></li>
+      <li><a id="dropHover" href="F:\shopping_site\E_Commerce_website_by_Ranjeet Kumar\E_Commerce\webd2\ranjit web\giftcard.html">Gift Card</a></li>
+      <li><a id="dropHover" href="login.html">LogIn</a></li>
+      <li><a id="dropHover" href="F:\shopping_site\E_Commerce_website_by_Ranjeet Kumar\E_Commerce\webd2\ranjit web\signup.html">24x7 Customer Care</a></li>
+      <li><a id="dropHover" href="F:\shopping_site\E_Commerce_website_by_Ranjeet Kumar\E_Commerce\webd2\ranjit web\signup.html">Track Order</a></li>
+      <li><a id="dropHover" href="#"><span class="glyphicon glyphicon-bullhorn"></span></a></li>
+      <li><a id="dropHover" href="signup.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+    </ul>
+
+      <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#"><img src="BestBuy.jpg" height="110px" width="180px" style="margin-top: -25px"></a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+
+        <li class="dropdown">
+          <a class="btn btn-danger dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-align-justify"></span> <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Electronics</a></li>
+            <li><a href="#">Camera & Optics</a></li>
+            <li><a href="#">Fasion</a></li>
+            <li><a href="#">Data Storage</a></li>
+            <li><a href="#">Baby & kids</a></li>
+            <li><a href="#">Laptops & Computer</a></li>
+            <li><a href="#">Home & Living</a></li>
+            <li><a href="#">Mobile & Accesssories</a></li>
+            <li><a href="#">Beauty, Health & Grocery</a></li>
+            <li><a href="#">Other</a></li>
+            <li><a href="#">Offer Zone</a></li>
+          </ul>
+        </li>
+      </ul>
+    <form class="navbar-form navbar-left">
+      <div class="input-group">
+        <input type="text" class="form-control" placeholder="Search products & brands......." size="65">
+        <div class="input-group-btn">
+          <button class="btn btn-warning" type="submit">
+            <i class="glyphicon glyphicon-search" onclick="search();"> SEARCH</i>
+          </button>
+        </div>
+      </div>
+    </form>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a id="dropHover" href="#" onclick="alert('Page is Under Construction. Apology for the Inconvinence!!');"> Cart &nbsp  <span class="glyphicon glyphicon-shopping-cart"></span></a></li> &nbsp &nbsp
+        <li class="dropdown"><a id="dropHover" class="dropdown-toggle" data-toggle="dropdown" href="#">Sign In &nbsp <span class="	glyphicon glyphicon-user"></span></a>
+          <div class="dropdown-menu">
+            <form id="formLogin" class="form container-fluid">
+              <div class="form-group">
+                <label for="usr">Name:</label>
+                <input type="text" class="form-control" id="usr">
+              </div>
+              <div class="form-group">
+                <label for="pwd">Password:</label>
+                <input type="password" class="form-control" id="pwd">
+              </div>
+              <button type="button" id="btnLogin" class="btn btn-block" onclick="alert('Server Error!!')">Login</button>
+            </form>
+            <div class="container-fluid">
+              <br>
+              <a class="small" href="#">Forgot password?</a>
+            </div>
+          </div>
+        </li>
+      </ul>
+  </div>
+  </div>
+</nav>
+<div>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">WebSiteName</a>
+    </div>
+    <ul class="nav navbar-nav navbar-right">
+      <li class="active"><a href="#">Home</a></li>
+      <li><a href="#">Page 1</a></li>
+      <li><a href="#">Page 2</a></li>
+      <li><a href="#">Page 3</a></li>
+    </ul>
+  </div>
+          <div class="container">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">WebSiteName</a>
+    </div>
+    <ul class="nav navbar-nav navbar-right">
+      <li class="active"><a href="#">Home</a></li>
+      <li><a href="#">Page 1</a></li>
+      <li><a href="#">Page 2</a></li>
+      <li><a href="#">Page 3</a></li>
+    </ul>
+  </div>
+  <div class="container">
+<ul class="nav navbar-nav navbar-right">
+        <li class="dropdown"><a id="dropHover" class="dropdown-toggle" data-toggle="dropdown" href="#">ELECTRONICS <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="F:\shopping_site\E_Commerce_website_by_Ranjeet Kumar\E_Commerce\webd2\website\mobile.html">Mobiles</a></li>
+          <li><a href="F:\shopping_site\E_Commerce_website_by_Ranjeet Kumar\E_Commerce\webd2\website\accesseries.html">Accessories</a></li>
+          <li><a href="F:\shopping_site\E_Commerce_website_by_Ranjeet Kumar\E_Commerce\webd2\website\laptop.html">Laptops</a></li>
+          <li><a href="F:\shopping_site\E_Commerce_website_by_Ranjeet Kumar\E_Commerce\webd2\website\tv.html">Televisions</a></li>
+          <li><a href="F:\shopping_site\E_Commerce_website_by_Ranjeet Kumar\E_Commerce\webd2\website\entertainment.html">Tablests</a></li>
+          <li><a href="F:\shopping_site\E_Commerce_website_by_Ranjeet Kumar\E_Commerce\webd2\website\entertainment.html">Gaming</a></li>
+          <li><a href="F:\shopping_site\E_Commerce_website_by_Ranjeet Kumar\E_Commerce\webd2\website\entertainment.html">Home Entertainment</a></li>
+        </ul>
+      </li>
+      <li class="dropdown"><a id="dropHover" class="dropdown-toggle" data-toggle="dropdown" href="#">APPLIANCES <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="television\tv.html">Televisions</a></li>
+          <li><a href="washing machines\washing machines.html">Washing Machine</a></li>
+          <li><a href="refrigerators\ref.html">Refrigerators</a></li>
+          <li><a href="ac\ac.html">Air Conditioners</a></li>
+
+        </ul>
+      </li>
+      <li class="dropdown"><a id="dropHover" class="dropdown-toggle" data-toggle="dropdown" href="#">FASHION <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="fashion\footwear\shoe.html">Footwear</a></li>
+          <li><a href="fashion\topwear\topwear.html">Top wear</a></li>
+          <li><a href="fashion\topwear\topwear.html">Bottom wear</a></li>
+          <li><a href="fashion\topwear\topwear.html">Sports wear</a></li>
+          <li><a href="fashion\topwear\topwear.html">Inner wear</a></li>
+          <li><a href="fashion\topwear\topwear.html">Accessories</a></li>
+        </ul>
+      </li>
+      <li class="dropdown"><a id="dropHover" class="dropdown-toggle" data-toggle="dropdown" href="#">BABY & KIDS <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Kids Clothing</a></li>
+          <li><a href="#">Kids Footwear</a></li>
+          <li><a href="#">Toys</a></li>
+          <li><a href="#">Baby care</a></li>
+          <li><a href="#">more</a></li>
+        </ul>
+      </li>
+      <li class="dropdown"><a id="dropHover" class="dropdown-toggle" data-toggle="dropdown" href="#">HOME & FURNITURE <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Kitchen</a></li>
+          <li><a href="#">Dining</a></li>
+          <li><a href="#">Furnishing</a></li>
+          <li><a href="#">Home Decor</a></li>
+          <li><a href="#">Lighting</a></li>
+        </ul>
+      </li>
+      <li class="dropdown"><a id="dropHover" class="dropdown-toggle" data-toggle="dropdown" href="#">MORE <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="F:\shopping_site\E_Commerce_website_by_Ranjeet Kumar\E_Commerce\book\book.html">Books</a></li>
+          <li><a href="#">Stationery</a></li>
+          <li><a href="F:\shopping_site\E_Commerce_website_by_Ranjeet Kumar\E_Commerce\webd2\website\entertainment.html">Gaming</a></li>
+          <li><a href="F:\shopping_site\E_Commerce_website_by_Ranjeet Kumar\E_Commerce\webd2\website\accesseries.html">Accessories</a></li>
+          <li><a href="#">Electronics</a></li>
+          <li><a href="#">Sports</a></li>
+        </ul>
+      </li>
+    </ul>
+    </div>
+</nav>
+</div>
+<div style="margin-top: -20px;">
+<video width="100%" autoplay="true" src="Great_indian_amazon.mp4">
+</video>
+</div>
+<br>
+<div id="topBtn">
+  <a href="F:\shopping_site\E_Commerce_website_by_Ranjeet Kumar\E_Commerce\webd2\ranjit web\shop.html" class="btn btn-lg btn-info btn-responsive" data-toggle="tooltip" data-placement="right" title="Hey! Welcome.... Shop using the Navigation Bar">SHOP ALL DEALS</a>
+</div>
+<br>
+<br>
+<br>
+<div class="row" align="center">
+  <div id="container1" class="col-md-6">
+  	<a href="#">
+  <img class="img-responsive" src="GW_PC_billboard_480x260-men-clothing._CB514303128_.jpg" id="image"><div class="overlay">
+    <div class="text">Men's Fresh<br> Fashion</div>
+  </div></a>
+  </div>
+
+  <div id="container1" class="col-md-6">
+  	<a href="#">
+  <img class="img-responsive" src="1071496_REDMI4_GW_PC_billboard_480x260_W2_3_R1._CB513877946_.jpg" id="image"><div class="overlay">
+    <div class="text">Redmi 4<br>Best Mobile</div>
+  </div> </a>
+</div>
+  <div id="container1" class="col-md-6">
+  <a href="#">
+  <img class="img-responsive" src="1071413_GW_PC_billboard_480x260_W2-Template._CB513925008_.jpg" id="image"><div class="overlay">
+    <div class="text">Home & <br>Kitchen</div>
+  </div></a>
+  </div>
+
+  <div id="container1" class="col-md-6">
+  	<a href="#">
+  <img class="img-responsive" src="1074265_CONSUMER-ELECTRONICS-W2-ELECTRONICS-GATEWAY-ADAPT-1068160_GW_PC_billboard_480x260_W2._CB514309278_.jpg" id="image"><div class="overlay">
+    <div class="text">Computer &<br> Electronics</div>
+  </div>
+</a>
+</div>
+
+  <div id="container1" class="col-md-6">
+  	<a href="#">
+  <img class="img-responsive" src="PC-billboard_Family_1x._CB513917274_.jpg" id="image"><div class="overlay">
+    <div class="text">Jusy launched <br> ECHO</div>
+  </div>
+</a>
+</div>
+
+  <div id="container1" class="col-md-6">
+  <a href="#">
+  <img class="img-responsive" src="sandilyr_2017-09-26T03-44_a69374_GW_PC_billboard_480x260_W2-AUTO-._CB513886491_.jpg" id="image"><div class="overlay">
+    <div class="text">Car & <br> Bikes accessories</div>
+  </div> </a>
+  </div>
+
+  <div id="container1" class="col-md-6">
+  	<a href="#">
+  <img class="img-responsive" src="GW_PC_billboard_480x260_W2-Template2323._CB513927739_.jpg" id="image"><div class="overlay">
+    <div class="text">Kindle &<br> Books</div>
+  </div> </a>
+</div>
+
+  <div id="container1" class="col-md-6">
+  	<a href="#">
+  <img class="img-responsive" src="IN-PR-PC-GW-Diwali17-W2-BenefitsPrice2-480x260._CB513922405_.jpg" id="image"><div class="overlay">
+    <div class="text">Sell With Us <br>
+    Prime Offer</div>
+  </div> </a>
+  </div>
+
+  <div id="container1" class="col-md-6">
+  	<a href="#">
+  <img class="img-responsive" src="1072399_in_amazon_paytments_w2_480x260._CB513812741_.jpg" id="image"><div class="overlay">
+    <div class="text">Use BEST BUY<br>via PAY</div>
+  </div>
+</a>
+</div>
+
+  <div id="container1" class="col-md-6">
+  	<a href="#">
+  <img class="img-responsive" src="GH_960x520_W2-Template_1X._CB515743406_.jpg" id="image"><div class="overlay">
+    <div class="text">App Only <br>Deals</div>
+  </div> </a>
+  </div>
+
+  <div id="container1" class="col-md-6">
+  	<a href="#">
+  <img class="img-responsive" src="1071113_w2_baby-products_480x260._CB515489866_.jpg" id="image"><div class="overlay">
+    <div class="text">Baby <br> Products</div>
+  </div> </a>
+</div>
+
+  <div id="container1" class="col-md-6">
+  	<a href="#">
+  <img class="img-responsive" src="rohitrav_2017-10-01T10-37_957d84_1074236_SPORTS-W2-DIS-DUMBBELLS_GW_PC_billboard_480x260_W2._CB513877251_.jpg" id="image"><div class="overlay">
+    <div class="text">Gym &<br> Fitness</div>
+  </div></a>
+  </div>
+
+  <div id="container1" class="col-md-6">
+  <a href="#">
+  <img class="img-responsive" src="LG_PCBB_480x260_W2._CB513920655_.jpg" id="image"><div class="overlay">
+    <div class="text">LG <br> Appliances</div>
+  </div> </a>
+</div>
+
+  <div id="container1" class="col-md-6">
+  	<a href="#">
+  <img class="img-responsive" src="Luggage-PC-BB-1x._CB513929597_.jpg" id="image"><div class="overlay">
+    <div class="text">Luggage <br> Bags </div>
+  </div> </a>
+  </div>
+
+  <div id="container1" class="col-md-6">
+  	<a href="#">
+  <img class="img-responsive" src="GW_PC_billboard_480x260_W2-Template._CB513802803_.jpg" id="image"><div class="overlay">
+    <div class="text">MOTO G5 Plus<br> at 15,999</div>
+  </div></a>
+</div>
+
+  <div id="container1" class="col-md-6">
+  	<a href="#">
+  <img class="img-responsive" src="1071429_gw_pc_billboard_480x260_w2_gps_cn_3._CB513882535_.jpg" id="image"><div class="overlay">
+    <div class="text">Double <br> bedsheets</div>
+  </div>  </a>
+  </div>
+
+  <div id="container1" class="col-md-6">
+  	<a href="#">
+  <img class="img-responsive" src="rohitrav_2017-10-03T11-19_ac56f4_1071656_DVD-ART-MEDIA-W2-BB-W2_GW_PC_billboard_480x260_W2._CB513920894_.jpg" id="image"><div class="overlay">
+    <div class="text">Gaming<br> Books</div>
+  </div> </a>
+</div>
+  <div id="container1" class="col-md-6">
+  	<a href="#">
+  <img class="img-responsive" src="rohitrav_2017-10-01T10-37_957d84_1074236_SPORTS-W2-DIS-DUMBBELLS_GW_PC_billboard_480x260_W2._CB513877251_.jpg" id="image"><div class="overlay">
+    <div class="text">Dumbells<br> Sets</div>
+  </div></a>
+  </div>
+  </div>
+
+  <br>
+  <br>
+  <div id="topBtn">
+  <a href="F:\shopping_site\E_Commerce_website_by_Ranjeet Kumar\E_Commerce\webd2\ranjit web\shop.html" class="btn btn-lg btn-info btn-responsive" data-toggle="tooltip" data-placement="right" title="Hey! Welcome.... Shop using the Navigation Bar">SHOP ALL DEALS</a>
+</div>
+<br>
+<div style="text-align: center;">
+  <a href="#" class="btn btn-primary btn-lg btn-block">Back To Top</a>
+</div>
+<div style="background-color:#232F3E; ">
+<div class="container-fluid">
+  <div style="background-color: #232F3E;">
+    <div class="row">
+          <div class="col-md-3">
+              <h3 id="h3">POLICY INFO</h3>
+              <ul type="none">
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of sale</a></li>
+                <li><a href="#">Terms if Use</a></li>
+                <li><a href="#">Report Abuse & Takedown Policy</a></li>
+              </ul>
+          </div>
+          <div class="col-md-3">
+              <h3 id="h3">COMPANY</h3>
+              <ul type="none">
+              <li><a href="#"> About Us</a></li>
+              <li><a href="#">Core Values</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Engineering</a></li>
+              <li><a href="#">Sitemap</a></li>
+          </div>
+          <div class="col-md-3">
+              <h3 id="h3">NEED HELP ?</h3>
+              <ul type="none">
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">100% Purchase Protection</a></li>
+              </ul>
+          </div>
+          <div class="col-md-3">
+              <h3 id="h3">SUBSCRIBE</h3>
+              <div class="form-inline"><br>
+          <input type="text" class="form-control" id="foot"
+          placeholder="Email here!!" size="15" /><a href="#Contact" class="btn btn-primary btn-responsive" data-toggle="tooltip" data-placement="bottom" title="Enter Email then Click to subscribe" onclick="subscribe();" >SUBSCRIBE</a>
+          <br><br>
+          <p id="h3">
+            Register now to get updates on promotions and coupons.<br> Or <a href="#">Download App </a>
+          </p>
+          </div>
+
+          </div>
+    </div>
+  </div>
+  </div>
+
+<hr>
+<div class="jumbotron" align="center">
+            <div class="row">
+                <div class="col-md-4"><h3>
+                    <span class="glyphicon glyphicon-map-marker"> TRACK YOUR ORDER</span> </h3>
+                </div>
+                <div class="col-md-4"><h3>
+                    <span class="glyphicon glyphicon-refresh"> FREE & EASY RETURNS </span> </h3>
+                </div>
+                <div class="col-md-4"><h3>
+                    <span class="glyphicon glyphicon-remove-sign"> ONLINE CANCELLATIONS </span></h3>
+                </div>
+            </div>
+            <br>
+            <hr>
+<div class="row">
+<div class="col-md-8">
+ <div class="container" style="position: relative;">
+ <footer class="container-fluid text-center" id="foot" >
+  &copy This Webpage (frontend) is created by Ranjeet Kumar for WEBD LAB <br>
+  <br>
+  Copyright © 2017, ranjeetiit098 All Rights Reserved
+  </div>
+</footer>
+</div>
+<br>
+<div class="col-md-2" >
+        <a href="https://facebook.com" target="_blank" class="btn btn-primary btn-sm" id="subscribe" data-toggle="tooltip" data-placement="bottom" title="facebook"> f </a>&nbsp
+        <a href="https://twitter.com" target="_blank" class="btn btn-info btn-sm" id="subscribe" data-toggle="tooltip" data-placement="bottom" title="twitter"> t </a>&nbsp
+        <a href="https://youtube.com" target="_blank" class="btn btn-danger btn-sm" id="subscribe" data-toggle="tooltip" data-placement="bottom" title="youtube">  Y</a>&nbsp
+        <a href="https://linkedin.com" target="_blank" class="btn btn-primary btn-sm" id="subscribe" data-toggle="tooltip" data-placement="bottom" title="linkedin"> in</a>
+  </div>
+  <div class="col-md-2">
+    <!--empty div -->
+  </div>
+</div>
+</div>
+
+</div>
+<script>
+$(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip();
+});
+</script>
+
+</body>
+</html>
